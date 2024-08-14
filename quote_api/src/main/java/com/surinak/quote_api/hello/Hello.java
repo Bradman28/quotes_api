@@ -11,7 +11,7 @@ public class Hello {
 
     @RequestMapping("/hello")
     public String hello(
-        @RequestParam(name="user", required=false, defaultValue="Champ")
+        @RequestParam(value="user", required=false, defaultValue="Champ")
         String user, 
         Model model) {
         model.addAttribute("user", user);
