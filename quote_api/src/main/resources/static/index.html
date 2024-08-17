@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1>Quote API Application; Static Page</h1>
-    <a href="/hello">Display the Dynamic Page</a>
+    <a href="/hello">Display the Dynamic Page</a><br>
+    <a href="/hello?user=Brad">Display Brad Greeting</a>
+
+    <form method="get" action="/hello"> 
+        <label for="user">Please enter a Name: </label>
+        <input type="text" id="user" name="user">
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
