@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote API</title>
+    <style>.quotes{margin-left: 100px;}</style>
+</head>
+<body>
+    <h1>Show Quote from QuotePark</h1><br>
+    <section>
+        <h2>Quote Generated from QuotePark</h2>
+        <p th:text="${quote_is}"></p><br>
+        <a href="/show_quote">Generate Next Quote</a>
+    </section>
+</body>
+</html>
